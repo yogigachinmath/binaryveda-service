@@ -16,7 +16,6 @@ function errorHandler(err, req, res, next) {
   } else {
     return res.status(404).send('Not Found');
   }
-  return next();
 }
 
 module.exports = errorHandler;

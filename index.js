@@ -14,7 +14,7 @@ app.use(express.json());
 app.use('/login', loginRouter);
 app.use('/sign', signUpRouter);
 
-app.get('/', async (req, res, next) => {
+app.get('/', async (req, res) => {
   res.status(200).send('welcome');
 });
 
